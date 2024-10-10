@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "exec": "\"$@\""
+  },
+  "packageManager": "yarn@4.5.0",
+  "dependencies": {
+    "aws-sso-creds-helper": "^1.12.0"
+  }
+}

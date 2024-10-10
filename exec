@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -e
+
+cd "$(dirname "$0")"
+
+main() {
+  load_nvm
+  exec "$@"
+}
+
+load_nvm() {
+  set +e
+  . "$NVM_DIR/nvm.sh"
+  set -e
+  nvm use
+  corepack enable
+  corepack install
+}
+
+main "$@"
